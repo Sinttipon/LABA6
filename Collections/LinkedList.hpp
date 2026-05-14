@@ -1,5 +1,5 @@
 #pragma once
-#include "exceptions.hpp"
+#include "../Base/exceptions.hpp"
 #include <cstddef>
 
 template <typename T>

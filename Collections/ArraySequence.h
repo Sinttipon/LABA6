@@ -1,5 +1,5 @@
-#pragma once
-#include "Sequence.h"
+#pragma once 
+#include "../Base/Sequence.h"
 #include "DynamicArray.hpp"
 #include <iostream>
 
