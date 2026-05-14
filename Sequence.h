@@ -3,6 +3,7 @@
 #include <string>
 #include "exceptions.hpp"
 #include "Option.hpp"
+#include "concepts.hpp"
 
 template <typename T>
 class Sequence
