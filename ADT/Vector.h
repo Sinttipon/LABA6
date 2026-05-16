@@ -1,4 +1,5 @@
 #pragma once
+#include "../Base/exceptions.hpp"
 #include "../Base/Sequence.h"
 #include "../Collections/ArraySequence.h"
 #include "../Base/concepts.hpp"
@@ -90,4 +91,95 @@ public:
         }
         return result;
     };
+
+    double Norm() const{
+        double sum = 0.0;
+        for (size_t i = 0; i < GetLength(); ++i){
+            T val = Get(i);
+            if constexpr (std::is_same_v<T, std::complex<double>> || std::is_same_v<T, std::complex<float>>){
+                sum+= std::norm(val);
+            }else{
+                sum+=static_cast<double>(val*val);
+            }
+        }
+        return std::sqrt(sum);
+    }
+
+    T ScalarProduct(const Vector<T>& other) const{
+        if (GetLength() != other.GetLength()){
+            throw DimensionMismatchException("Vector::ScalarProduct: размер " + std::to_string(GetLength()) + 
+                " != " + std::to_string(other.GetLength()));
+        }
+        T result = T{};
+        for (size_t i = 0; i < GetLength(); ++i){
+            result = result + (Get(i) * other.Get(i));
+        }
+        return result;
+    }
+
+    Vector<T> operator+ (const Vector<T>& other) const {
+        return Add(other);
+    }
+    Vector<T> operator* (T scalar) const {
+        return MultiByScalar(scalar);
+    }
+    bool operator== (const Vector<T>& other) const {
+        if (GetLength() != other.GetLength()) return false;
+        for (size_t i = 0; i < GetLength(); ++i){
+            if (Get(i) != other.Get(i)) return false;
+        }
+        return true;
+    }
+    bool operator!=(const Vector<T>& other) const {
+        return !(*this == other);
+    }
+
+    static Vector<int> Range (int start, int end){
+        if (start > end) throw std::invalid_argument("Для range start > end");
+        size_t count = static_cast<size_t>(end - start + 1);
+        int *tmp= new int[count];
+        for (size_t i = 0; i < count; ++i){
+            tmp[i] = start + i;
+        }
+        Vector<int> res(tmp, count);
+        delete[] tmp;
+        return res;
+    }
+
+    Sequence<Vector<T>*> *Boolean() const {
+        size_t n = GetLength();
+        if (n > 20) throw std::overflow_error("Boolean слишком много элементов");
+        size_t total = 1ULL << n;
+        auto *res = new MutableArraySequence<Vector<T> *>();
+        for (size_t mask = 0; mask < total; ++mask)
+        {
+            auto *subset = new MutableArraySequence<T>();
+            for (size_t i = 0; i < n; ++i)
+            {
+                if (mask & (1ULL << i))
+                    subset->AppendInternal(Get(i));
+            }
+            res->AppendInternal(new Vector<T>(subset));
+            delete subset;
+        }
+        return res;
+    }
+
+    Sequence<Vector<T>*> *AllSubsequences() const {
+        size_t n = GetLength();
+        auto *res = new MutableArraySequence<Vector<T> *>();
+        res->AppendInternal(new Vector<T>()); 
+        for (size_t start = 0; start < n; ++start)
+        {
+            for (size_t len = 1; len <= n - start; ++len)
+            {
+                auto *sub = new MutableArraySequence<T>();
+                for (size_t i = start; i < start + len; ++i)
+                    sub->AppendInternal(Get(i));
+                res->AppendInternal(new Vector<T>(sub));
+                delete sub;
+            }
+        }
+        return res;
+    }
 };

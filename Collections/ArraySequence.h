@@ -13,7 +13,7 @@ template <typename T>
 class BaseArraySequence : public Sequence<T>
 {
 protected:
-    friend class Vector<T>;
+    template <typename U> friend class Vector;
     DynamicArray<T> items;
 
     BaseArraySequence() {}

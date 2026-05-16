@@ -4,6 +4,7 @@
 #include <iostream>
 #include <cmath>
 int testsFailed = 0;
+
 void VectorGetTest()
 {
     TEST("Get вектор")
@@ -87,6 +88,7 @@ void VectorConcat(){
     }
     ENDTEST();
 }
+
 void VectorAdd(){
     TEST("Add вектор")
     {
@@ -103,6 +105,7 @@ void VectorAdd(){
     }
     ENDTEST();
 }
+
 void VectorMultiByScalar(){
     TEST("MultiByScalar вектор"){
         int arr[] = {1, 2, 3, 4, 5};
@@ -115,9 +118,121 @@ void VectorMultiByScalar(){
     }
     ENDTEST();
 }
-void RunAllVectorTests()
+
+void VectorNormTest(){
+    TEST("Норма вектор"){
+        int arr[] = {3, 4};
+        Vector<int> t(arr, 2);
+        double norm = t.Norm();
+        CHECK(std::abs(norm - 5.0) < 1e-9);
+    }
+    ENDTEST();
+}
+
+void VectorScalarProductTest(){
+    TEST("Скалярное произведение")
+    {
+        int a1[] = {1, 2, 3};
+        int a2[] = {4, 5, 6};
+        Vector<int> t1(a1, 3);
+        Vector<int> t2(a2, 3);
+        CHECK(t1.ScalarProduct(t2) == 32);
+    }
+    ENDTEST();
+}
+
+void VectorOperatorsTest1(){
+    TEST("operator+ и operator*")
+    {
+        int a1[] = {1, 2, 3};
+        int a2[] = {4, 5, 6};
+        Vector<int> t1(a1, 3);
+        Vector<int> t2(a2, 3);
+
+        Vector<int> tSum = t1 + t2;
+        CHECK(tSum.Get(0) == 5);
+        CHECK(tSum.Get(2) == 9);
+
+        Vector<int> tScaled = t1 * 10;
+        CHECK(tScaled.Get(0) == 10);
+        CHECK(tScaled.Get(2) == 30);
+    }
+    ENDTEST();
+}
+
+void VectorOperatorsTest2(){
+    TEST("operator== и operator!=")
+    {
+        int a1[] = {1, 2, 3};
+        int a2[] = {1, 2, 3};
+        int a3[] = {1, 2, 4};
+        Vector<int> t1(a1, 3);
+        Vector<int> t2(a2, 3);
+        Vector<int> t3(a3, 3);
+
+        CHECK(t1 == t2);
+        CHECK(!(t1 == t3));
+        CHECK(t1 != t3);
+        CHECK(!(t1 != t2));
+
+        Vector<int> tShort(a1, 2);
+        CHECK(t1 != tShort);
+    }
+    ENDTEST();
+}
+
+void VectorRangeTest()
 {
-    std::cout<< "Тесты вектор" << std::endl;
+    TEST("Range генерация диапазона")
+    {
+        auto t = Vector<int>::Range(1, 5);
+        CHECK(t.GetLength() == 5);
+        CHECK(t.Get(0) == 1);
+        CHECK(t.Get(4) == 5);
+
+        auto tNeg = Vector<int>::Range(-2, 2);
+        CHECK(tNeg.GetLength() == 5);
+        CHECK(tNeg.Get(0) == -2);
+        CHECK(tNeg.Get(4) == 2);
+
+        bool exceptionThrown = false;
+        try {
+            Vector<int>::Range(5, 1);
+        } catch (const std::invalid_argument&) {
+            exceptionThrown = true;
+        } catch (...) {}
+        
+        CHECK(exceptionThrown);
+    }
+    ENDTEST();
+}
+
+void VectorAllSubsequencesTest() {
+    TEST("AllSubsequences подмножества") {
+        int arr[] = {1, 2, 3};
+        Vector<int> t(arr, 3);
+        auto* subs = t.AllSubsequences();
+        CHECK(subs->GetLength() == 7);
+        bool found12 = false;
+        bool found13 = false;
+
+        for (size_t i = 0; i < subs->GetLength(); ++i) {
+            Vector<int>* sub = dynamic_cast<Vector<int>*>(subs->Get(i));
+            if (sub->GetLength() == 2 && sub->Get(0) == 1 && sub->Get(1) == 2)
+                found12 = true;
+            if (sub->GetLength() == 2 && sub->Get(0) == 1 && sub->Get(1) == 3)
+                found13 = true;
+            delete sub;
+        }
+        CHECK(found12);
+        CHECK(!found13);
+        delete subs;
+    }
+    ENDTEST();
+}
+
+void RunAllVectorTests(){
+    std::cout << "Тесты вектор" << std::endl;
     VectorGetTest();
     VectorGetSubsequence();
     VectorAppendPrepend();
@@ -125,10 +240,15 @@ void RunAllVectorTests()
     VectorConcat();
     VectorAdd();
     VectorMultiByScalar();
+    VectorNormTest();
+    VectorScalarProductTest();
+    VectorOperatorsTest1();
+    VectorOperatorsTest2();
+    VectorAllSubsequencesTest();
+    VectorRangeTest();
     if (testsFailed == 0){
         std::cout << "Все тесты успешно пройдены" << std::endl;
-    }
-    else{
+    } else{
         std::cout << "Есть непройденные тесты " << testsFailed << "шт" << std::endl;
     }
 }

@@ -1,0 +1,4 @@
+C:/Users/user/Desktop/Laba 6/build/CMakeFiles/Tests.dir
+C:/Users/user/Desktop/Laba 6/build/CMakeFiles/test.dir
+C:/Users/user/Desktop/Laba 6/build/CMakeFiles/edit_cache.dir
+C:/Users/user/Desktop/Laba 6/build/CMakeFiles/rebuild_cache.dir
