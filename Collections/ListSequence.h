@@ -1,6 +1,7 @@
 #pragma once
 #include "../Base/Sequence.h"
 #include "LinkedList.hpp"
+#include "ArraySequence.h"
 #include <iostream>
 
 template <typename T>

@@ -2,7 +2,8 @@
 #include "../Base/Sequence.h"
 #include "DynamicArray.hpp"
 #include <iostream>
-
+template <typename T>
+class Vector;
 template <typename T>
 class MutableArraySequence;
 template <typename T>
@@ -12,10 +13,11 @@ template <typename T>
 class BaseArraySequence : public Sequence<T>
 {
 protected:
+    friend class Vector<T>;
     DynamicArray<T> items;
 
     BaseArraySequence() {}
-    BaseArraySequence(T *itemsArr, size_t count) : items(itemsArr, count) {}
+    BaseArraySequence(const T *itemsArr, size_t count) : items(itemsArr, count) {}
     BaseArraySequence(const DynamicArray<T> &arr) : items(arr) {}
     BaseArraySequence(const BaseArraySequence<T> &other) : items(other.items) {}
 
@@ -247,7 +249,7 @@ class MutableArraySequence : public BaseArraySequence<T>
 {
 public:
     MutableArraySequence() : BaseArraySequence<T>() {}
-    MutableArraySequence(T *itemsArr, size_t count) : BaseArraySequence<T>(itemsArr, count) {}
+    MutableArraySequence(const T *itemsArr, size_t count) : BaseArraySequence<T>(itemsArr, count) {}
     MutableArraySequence(const DynamicArray<T> &arr) : BaseArraySequence<T>(arr) {}
     MutableArraySequence(const MutableArraySequence<T> &other) : BaseArraySequence<T>(other) {}
 

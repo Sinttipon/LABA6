@@ -58,3 +58,10 @@ public:
     TestFailedException(const std::string &msg) : message(msg) {}
     std::string whatErr() const override { return message; }
 };
+
+class DimensionMismatchException : public SequenceException
+{
+public:
+    DimensionMismatchException(const std::string &msg = "Несовпадение размеров векторов")
+        : SequenceException(msg) {}
+};

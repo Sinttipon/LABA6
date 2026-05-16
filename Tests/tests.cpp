@@ -1,68 +1,6 @@
 #include <iostream>
-
-#include "DynamicArray.hpp"
-#include "LinkedList.hpp"
-#include "BitSequence.h"
-#include "ListSequence.h"
-#include "Option.hpp"
-#include "exceptions.hpp"
-
+#include "tests.h"
 static int testsFailed = 0;
-
-#define TEST(name)                                    \
-    do                                                \
-    {                                                 \
-        std::cout << "  Тест: " << name << std::endl; \
-        try
-
-#define ENDTEST()                                                       \
-    catch (const MYException &e)                                        \
-    {                                                                   \
-        std::cout << "НЕ ПРОЙДЕН: " << e.whatErr() << std::endl;        \
-        ++testsFailed;                                                  \
-    }                                                                   \
-    catch (const std::exception &e)                                     \
-    {                                                                   \
-        std::cout << "НЕ ПРОЙДЕН: " << e.what() << std::endl;           \
-        ++testsFailed;                                                  \
-    }                                                                   \
-    catch (...)                                                         \
-    {                                                                   \
-        std::cout << "НЕ ПРОЙДЕН: неизвестное исключение" << std::endl; \
-        ++testsFailed;                                                  \
-    }                                                                   \
-    }                                                                   \
-    while (0)
-
-#define CHECK(cond)                                                    \
-    do                                                                 \
-    {                                                                  \
-        if (!(cond))                                                   \
-        {                                                              \
-            throw TestFailedException("Проверка не пройдена: " #cond); \
-        }                                                              \
-    } while (0)
-
-#define CHECK_THROW(expr, exc_type)                                                               \
-    do                                                                                            \
-    {                                                                                             \
-        bool caught = false;                                                                      \
-        try                                                                                       \
-        {                                                                                         \
-            expr;                                                                                 \
-        }                                                                                         \
-        catch (const exc_type &)                                                                  \
-        {                                                                                         \
-            caught = true;                                                                        \
-        }                                                                                         \
-        catch (...)                                                                               \
-        {                                                                                         \
-        }                                                                                         \
-        if (!caught)                                                                              \
-        {                                                                                         \
-            throw TestFailedException("Ожидалось исключение " #exc_type ", но оно не выброшено"); \
-        }                                                                                         \
-    } while (0)
 
 void TestDynamicArray_Construction()
 {
