@@ -138,6 +138,117 @@ Tests/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Tests.dir\build.make CMakeFiles/Tests.dir/build
 .PHONY : Tests/fast
 
+#=============================================================================
+# Target rules for targets named Lab3QtApp
+
+# Build rule for target.
+Lab3QtApp: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Lab3QtApp
+.PHONY : Lab3QtApp
+
+# fast build rule for target.
+Lab3QtApp/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Lab3QtApp.dir\build.make CMakeFiles/Lab3QtApp.dir/build
+.PHONY : Lab3QtApp/fast
+
+#=============================================================================
+# Target rules for targets named Lab3QtApp_autogen_timestamp_deps
+
+# Build rule for target.
+Lab3QtApp_autogen_timestamp_deps: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Lab3QtApp_autogen_timestamp_deps
+.PHONY : Lab3QtApp_autogen_timestamp_deps
+
+# fast build rule for target.
+Lab3QtApp_autogen_timestamp_deps/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Lab3QtApp_autogen_timestamp_deps.dir\build.make CMakeFiles/Lab3QtApp_autogen_timestamp_deps.dir/build
+.PHONY : Lab3QtApp_autogen_timestamp_deps/fast
+
+#=============================================================================
+# Target rules for targets named Lab3QtApp_autogen
+
+# Build rule for target.
+Lab3QtApp_autogen: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Lab3QtApp_autogen
+.PHONY : Lab3QtApp_autogen
+
+# fast build rule for target.
+Lab3QtApp_autogen/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Lab3QtApp_autogen.dir\build.make CMakeFiles/Lab3QtApp_autogen.dir/build
+.PHONY : Lab3QtApp_autogen/fast
+
+GUI/main_qt.obj: GUI/main_qt.cpp.obj
+.PHONY : GUI/main_qt.obj
+
+# target to build an object file
+GUI/main_qt.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Lab3QtApp.dir\build.make CMakeFiles/Lab3QtApp.dir/GUI/main_qt.cpp.obj
+.PHONY : GUI/main_qt.cpp.obj
+
+GUI/main_qt.i: GUI/main_qt.cpp.i
+.PHONY : GUI/main_qt.i
+
+# target to preprocess a source file
+GUI/main_qt.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Lab3QtApp.dir\build.make CMakeFiles/Lab3QtApp.dir/GUI/main_qt.cpp.i
+.PHONY : GUI/main_qt.cpp.i
+
+GUI/main_qt.s: GUI/main_qt.cpp.s
+.PHONY : GUI/main_qt.s
+
+# target to generate assembly for a file
+GUI/main_qt.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Lab3QtApp.dir\build.make CMakeFiles/Lab3QtApp.dir/GUI/main_qt.cpp.s
+.PHONY : GUI/main_qt.cpp.s
+
+GUI/mainwindow.obj: GUI/mainwindow.cpp.obj
+.PHONY : GUI/mainwindow.obj
+
+# target to build an object file
+GUI/mainwindow.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Lab3QtApp.dir\build.make CMakeFiles/Lab3QtApp.dir/GUI/mainwindow.cpp.obj
+.PHONY : GUI/mainwindow.cpp.obj
+
+GUI/mainwindow.i: GUI/mainwindow.cpp.i
+.PHONY : GUI/mainwindow.i
+
+# target to preprocess a source file
+GUI/mainwindow.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Lab3QtApp.dir\build.make CMakeFiles/Lab3QtApp.dir/GUI/mainwindow.cpp.i
+.PHONY : GUI/mainwindow.cpp.i
+
+GUI/mainwindow.s: GUI/mainwindow.cpp.s
+.PHONY : GUI/mainwindow.s
+
+# target to generate assembly for a file
+GUI/mainwindow.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Lab3QtApp.dir\build.make CMakeFiles/Lab3QtApp.dir/GUI/mainwindow.cpp.s
+.PHONY : GUI/mainwindow.cpp.s
+
+Lab3QtApp_autogen/mocs_compilation.obj: Lab3QtApp_autogen/mocs_compilation.cpp.obj
+.PHONY : Lab3QtApp_autogen/mocs_compilation.obj
+
+# target to build an object file
+Lab3QtApp_autogen/mocs_compilation.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Lab3QtApp.dir\build.make CMakeFiles/Lab3QtApp.dir/Lab3QtApp_autogen/mocs_compilation.cpp.obj
+.PHONY : Lab3QtApp_autogen/mocs_compilation.cpp.obj
+
+Lab3QtApp_autogen/mocs_compilation.i: Lab3QtApp_autogen/mocs_compilation.cpp.i
+.PHONY : Lab3QtApp_autogen/mocs_compilation.i
+
+# target to preprocess a source file
+Lab3QtApp_autogen/mocs_compilation.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Lab3QtApp.dir\build.make CMakeFiles/Lab3QtApp.dir/Lab3QtApp_autogen/mocs_compilation.cpp.i
+.PHONY : Lab3QtApp_autogen/mocs_compilation.cpp.i
+
+Lab3QtApp_autogen/mocs_compilation.s: Lab3QtApp_autogen/mocs_compilation.cpp.s
+.PHONY : Lab3QtApp_autogen/mocs_compilation.s
+
+# target to generate assembly for a file
+Lab3QtApp_autogen/mocs_compilation.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Lab3QtApp.dir\build.make CMakeFiles/Lab3QtApp.dir/Lab3QtApp_autogen/mocs_compilation.cpp.s
+.PHONY : Lab3QtApp_autogen/mocs_compilation.cpp.s
+
 Tests/BitSeqTest.obj: Tests/BitSeqTest.cpp.obj
 .PHONY : Tests/BitSeqTest.obj
 
@@ -291,7 +402,19 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... test
+	@echo ... Lab3QtApp_autogen
+	@echo ... Lab3QtApp_autogen_timestamp_deps
+	@echo ... Lab3QtApp
 	@echo ... Tests
+	@echo ... GUI/main_qt.obj
+	@echo ... GUI/main_qt.i
+	@echo ... GUI/main_qt.s
+	@echo ... GUI/mainwindow.obj
+	@echo ... GUI/mainwindow.i
+	@echo ... GUI/mainwindow.s
+	@echo ... Lab3QtApp_autogen/mocs_compilation.obj
+	@echo ... Lab3QtApp_autogen/mocs_compilation.i
+	@echo ... Lab3QtApp_autogen/mocs_compilation.s
 	@echo ... Tests/BitSeqTest.obj
 	@echo ... Tests/BitSeqTest.i
 	@echo ... Tests/BitSeqTest.s

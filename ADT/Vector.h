@@ -23,6 +23,15 @@ public:
 
     }
     Vector(const Vector& other): data(other.data){}
+    
+    Vector &operator=(const Vector &other)
+    {
+        if (this != &other)
+        {
+            this->data = other.data;
+        }
+        return *this;
+    }
     ~Vector() override = default;
 
 

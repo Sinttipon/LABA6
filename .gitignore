@@ -1,4 +1,9 @@
+build/
+
+.qtcsettings.cmake
+*.user
+
 *.exe
+*.dll
 *.o
 *.obj
-

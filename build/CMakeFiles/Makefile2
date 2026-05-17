@@ -63,10 +63,12 @@ CMAKE_BINARY_DIR = "C:\Users\user\Desktop\Laba 6\build"
 
 # The main recursive "all" target.
 all: CMakeFiles/Tests.dir/all
+all: CMakeFiles/Lab3QtApp.dir/all
 .PHONY : all
 
 # The main recursive "codegen" target.
 codegen: CMakeFiles/Tests.dir/codegen
+codegen: CMakeFiles/Lab3QtApp.dir/codegen
 .PHONY : codegen
 
 # The main recursive "preinstall" target.
@@ -75,6 +77,9 @@ preinstall:
 
 # The main recursive "clean" target.
 clean: CMakeFiles/Tests.dir/clean
+clean: CMakeFiles/Lab3QtApp.dir/clean
+clean: CMakeFiles/Lab3QtApp_autogen_timestamp_deps.dir/clean
+clean: CMakeFiles/Lab3QtApp_autogen.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -84,7 +89,7 @@ clean: CMakeFiles/Tests.dir/clean
 CMakeFiles/Tests.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Tests.dir\build.make CMakeFiles/Tests.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Tests.dir\build.make CMakeFiles/Tests.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="C:\Users\user\Desktop\Laba 6\build\CMakeFiles" --progress-num=1,2,3,4,5,6,7 "Built target Tests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="C:\Users\user\Desktop\Laba 6\build\CMakeFiles" --progress-num=7,8,9,10,11,12,13 "Built target Tests"
 .PHONY : CMakeFiles/Tests.dir/all
 
 # Build rule for subdir invocation for target.
@@ -101,13 +106,110 @@ Tests: CMakeFiles/Tests.dir/rule
 # codegen rule for target.
 CMakeFiles/Tests.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Tests.dir\build.make CMakeFiles/Tests.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="C:\Users\user\Desktop\Laba 6\build\CMakeFiles" --progress-num=1,2,3,4,5,6,7 "Finished codegen for target Tests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="C:\Users\user\Desktop\Laba 6\build\CMakeFiles" --progress-num=7,8,9,10,11,12,13 "Finished codegen for target Tests"
 .PHONY : CMakeFiles/Tests.dir/codegen
 
 # clean rule for target.
 CMakeFiles/Tests.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Tests.dir\build.make CMakeFiles/Tests.dir/clean
 .PHONY : CMakeFiles/Tests.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/Lab3QtApp.dir
+
+# All Build rule for target.
+CMakeFiles/Lab3QtApp.dir/all: CMakeFiles/Lab3QtApp_autogen_timestamp_deps.dir/all
+CMakeFiles/Lab3QtApp.dir/all: CMakeFiles/Lab3QtApp_autogen.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Lab3QtApp.dir\build.make CMakeFiles/Lab3QtApp.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Lab3QtApp.dir\build.make CMakeFiles/Lab3QtApp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="C:\Users\user\Desktop\Laba 6\build\CMakeFiles" --progress-num=1,2,3,4,5 "Built target Lab3QtApp"
+.PHONY : CMakeFiles/Lab3QtApp.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/Lab3QtApp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\user\Desktop\Laba 6\build\CMakeFiles" 6
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/Lab3QtApp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\user\Desktop\Laba 6\build\CMakeFiles" 0
+.PHONY : CMakeFiles/Lab3QtApp.dir/rule
+
+# Convenience name for target.
+Lab3QtApp: CMakeFiles/Lab3QtApp.dir/rule
+.PHONY : Lab3QtApp
+
+# codegen rule for target.
+CMakeFiles/Lab3QtApp.dir/codegen: CMakeFiles/Lab3QtApp_autogen_timestamp_deps.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Lab3QtApp.dir\build.make CMakeFiles/Lab3QtApp.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="C:\Users\user\Desktop\Laba 6\build\CMakeFiles" --progress-num=1,2,3,4,5 "Finished codegen for target Lab3QtApp"
+.PHONY : CMakeFiles/Lab3QtApp.dir/codegen
+
+# clean rule for target.
+CMakeFiles/Lab3QtApp.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Lab3QtApp.dir\build.make CMakeFiles/Lab3QtApp.dir/clean
+.PHONY : CMakeFiles/Lab3QtApp.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/Lab3QtApp_autogen_timestamp_deps.dir
+
+# All Build rule for target.
+CMakeFiles/Lab3QtApp_autogen_timestamp_deps.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Lab3QtApp_autogen_timestamp_deps.dir\build.make CMakeFiles/Lab3QtApp_autogen_timestamp_deps.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Lab3QtApp_autogen_timestamp_deps.dir\build.make CMakeFiles/Lab3QtApp_autogen_timestamp_deps.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="C:\Users\user\Desktop\Laba 6\build\CMakeFiles" --progress-num= "Built target Lab3QtApp_autogen_timestamp_deps"
+.PHONY : CMakeFiles/Lab3QtApp_autogen_timestamp_deps.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/Lab3QtApp_autogen_timestamp_deps.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\user\Desktop\Laba 6\build\CMakeFiles" 0
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/Lab3QtApp_autogen_timestamp_deps.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\user\Desktop\Laba 6\build\CMakeFiles" 0
+.PHONY : CMakeFiles/Lab3QtApp_autogen_timestamp_deps.dir/rule
+
+# Convenience name for target.
+Lab3QtApp_autogen_timestamp_deps: CMakeFiles/Lab3QtApp_autogen_timestamp_deps.dir/rule
+.PHONY : Lab3QtApp_autogen_timestamp_deps
+
+# codegen rule for target.
+CMakeFiles/Lab3QtApp_autogen_timestamp_deps.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Lab3QtApp_autogen_timestamp_deps.dir\build.make CMakeFiles/Lab3QtApp_autogen_timestamp_deps.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="C:\Users\user\Desktop\Laba 6\build\CMakeFiles" --progress-num= "Finished codegen for target Lab3QtApp_autogen_timestamp_deps"
+.PHONY : CMakeFiles/Lab3QtApp_autogen_timestamp_deps.dir/codegen
+
+# clean rule for target.
+CMakeFiles/Lab3QtApp_autogen_timestamp_deps.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Lab3QtApp_autogen_timestamp_deps.dir\build.make CMakeFiles/Lab3QtApp_autogen_timestamp_deps.dir/clean
+.PHONY : CMakeFiles/Lab3QtApp_autogen_timestamp_deps.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/Lab3QtApp_autogen.dir
+
+# All Build rule for target.
+CMakeFiles/Lab3QtApp_autogen.dir/all: CMakeFiles/Lab3QtApp_autogen_timestamp_deps.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Lab3QtApp_autogen.dir\build.make CMakeFiles/Lab3QtApp_autogen.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Lab3QtApp_autogen.dir\build.make CMakeFiles/Lab3QtApp_autogen.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="C:\Users\user\Desktop\Laba 6\build\CMakeFiles" --progress-num=6 "Built target Lab3QtApp_autogen"
+.PHONY : CMakeFiles/Lab3QtApp_autogen.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/Lab3QtApp_autogen.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\user\Desktop\Laba 6\build\CMakeFiles" 1
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/Lab3QtApp_autogen.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\user\Desktop\Laba 6\build\CMakeFiles" 0
+.PHONY : CMakeFiles/Lab3QtApp_autogen.dir/rule
+
+# Convenience name for target.
+Lab3QtApp_autogen: CMakeFiles/Lab3QtApp_autogen.dir/rule
+.PHONY : Lab3QtApp_autogen
+
+# codegen rule for target.
+CMakeFiles/Lab3QtApp_autogen.dir/codegen: CMakeFiles/Lab3QtApp_autogen_timestamp_deps.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Lab3QtApp_autogen.dir\build.make CMakeFiles/Lab3QtApp_autogen.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="C:\Users\user\Desktop\Laba 6\build\CMakeFiles" --progress-num=6 "Finished codegen for target Lab3QtApp_autogen"
+.PHONY : CMakeFiles/Lab3QtApp_autogen.dir/codegen
+
+# clean rule for target.
+CMakeFiles/Lab3QtApp_autogen.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Lab3QtApp_autogen.dir\build.make CMakeFiles/Lab3QtApp_autogen.dir/clean
+.PHONY : CMakeFiles/Lab3QtApp_autogen.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

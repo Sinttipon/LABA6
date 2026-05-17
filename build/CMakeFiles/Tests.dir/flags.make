@@ -6,5 +6,5 @@ CXX_DEFINES =
 
 CXX_INCLUDES = @CMakeFiles/Tests.dir/includes_CXX.rsp
 
-CXX_FLAGS = -std=gnu++20 -Wall -Wextra -Wpedantic -Wconversion
+CXX_FLAGS = -std=gnu++20 -Wno-deprecated-copy -Wall -Wextra -Wpedantic -Wconversion
 
