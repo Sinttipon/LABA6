@@ -139,7 +139,7 @@ public:
         size_t count = static_cast<size_t>(end - start + 1);
         int *tmp= new int[count];
         for (size_t i = 0; i < count; ++i){
-            tmp[i] = start + i;
+            tmp[i] = static_cast<int>(start + i);
         }
         Vector<int> res(tmp, count);
         delete[] tmp;

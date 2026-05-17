@@ -48,7 +48,7 @@ public:
             bytes.Set(i, 0);
         for (size_t i = 0; i < count; ++i)
             if (arr[i])
-                bytes[byteIndex(i)] |= (1 << bitOffset(i));
+                bytes[byteIndex(i)] |= static_cast<unsigned char>(1U << bitOffset(i));
     }
 
     BitSequence(const BitSequence &other) : bytes(other.bytes), bitLength(other.bitLength) {}
@@ -89,7 +89,7 @@ public:
         if (value)
             bytes[bi] |= (1 << bo);
         else
-            bytes[bi] &= ~(1 << bo);
+            bytes[bi] &= static_cast<unsigned char>(~(1U << bo));
     }
 
     Sequence<Bit> *GetSubsequence(size_t startIndex, size_t endIndex) const override
@@ -121,7 +121,6 @@ public:
     Sequence<Bit> *Prepend(const Bit &item) const override
     {
         BitSequence *copy = new BitSequence(*this);
-        size_t oldLen = copy->bitLength;
         copy->bitLength++;
         size_t newByteCount = (copy->bitLength + 7) / 8;
         if (newByteCount > copy->bytes.GetSize())
@@ -137,7 +136,6 @@ public:
         if (index > bitLength)
             throw IndexOutOfRange(index, bitLength + 1, "BitSequence::InsertAt");
         BitSequence *copy = new BitSequence(*this);
-        size_t oldLen = copy->bitLength;
         copy->bitLength++;
         size_t newByteCount = (copy->bitLength + 7) / 8;
         if (newByteCount > copy->bytes.GetSize())

@@ -258,30 +258,6 @@ Tests/VectorTest.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Tests.dir\build.make CMakeFiles/Tests.dir/Tests/VectorTest.cpp.s
 .PHONY : Tests/VectorTest.cpp.s
 
-Tests/tests.obj: Tests/tests.cpp.obj
-.PHONY : Tests/tests.obj
-
-# target to build an object file
-Tests/tests.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Tests.dir\build.make CMakeFiles/Tests.dir/Tests/tests.cpp.obj
-.PHONY : Tests/tests.cpp.obj
-
-Tests/tests.i: Tests/tests.cpp.i
-.PHONY : Tests/tests.i
-
-# target to preprocess a source file
-Tests/tests.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Tests.dir\build.make CMakeFiles/Tests.dir/Tests/tests.cpp.i
-.PHONY : Tests/tests.cpp.i
-
-Tests/tests.s: Tests/tests.cpp.s
-.PHONY : Tests/tests.s
-
-# target to generate assembly for a file
-Tests/tests.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Tests.dir\build.make CMakeFiles/Tests.dir/Tests/tests.cpp.s
-.PHONY : Tests/tests.cpp.s
-
 main.obj: main.cpp.obj
 .PHONY : main.obj
 
@@ -331,9 +307,6 @@ help:
 	@echo ... Tests/VectorTest.obj
 	@echo ... Tests/VectorTest.i
 	@echo ... Tests/VectorTest.s
-	@echo ... Tests/tests.obj
-	@echo ... Tests/tests.i
-	@echo ... Tests/tests.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

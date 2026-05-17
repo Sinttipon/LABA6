@@ -17,7 +17,6 @@ endif()
 
 
 set(TEST_SOURCES
-    Tests/tests.cpp
     Tests/VectorTest.cpp
     Tests/BitSeqTest.cpp
     Tests/DynamicArrayTest.cpp
@@ -40,6 +39,10 @@ set(HEADERS
     Collections/BitSequence.h
     ADT/Vector.h
     Tests/tests.h
+    Tests/BitSeqTest.h
+    Tests/DynamicArrayTest.h
+    Tests/LinkedListTest.h
+    Tests/ListSeqTest.h
 )
 
 

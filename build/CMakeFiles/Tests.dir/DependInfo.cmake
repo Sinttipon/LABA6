@@ -13,7 +13,6 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/Users/user/Desktop/Laba 6/Tests/LinkedListTest.cpp" "CMakeFiles/Tests.dir/Tests/LinkedListTest.cpp.obj" "gcc" "CMakeFiles/Tests.dir/Tests/LinkedListTest.cpp.obj.d"
   "C:/Users/user/Desktop/Laba 6/Tests/ListSeqTest.cpp" "CMakeFiles/Tests.dir/Tests/ListSeqTest.cpp.obj" "gcc" "CMakeFiles/Tests.dir/Tests/ListSeqTest.cpp.obj.d"
   "C:/Users/user/Desktop/Laba 6/Tests/VectorTest.cpp" "CMakeFiles/Tests.dir/Tests/VectorTest.cpp.obj" "gcc" "CMakeFiles/Tests.dir/Tests/VectorTest.cpp.obj.d"
-  "C:/Users/user/Desktop/Laba 6/Tests/tests.cpp" "CMakeFiles/Tests.dir/Tests/tests.cpp.obj" "gcc" "CMakeFiles/Tests.dir/Tests/tests.cpp.obj.d"
   "C:/Users/user/Desktop/Laba 6/main.cpp" "CMakeFiles/Tests.dir/main.cpp.obj" "gcc" "CMakeFiles/Tests.dir/main.cpp.obj.d"
   )
 

@@ -411,4 +411,8 @@ CMakeFiles/Tests.dir/main.cpp.obj: C:\Users\user\Desktop\Laba\ 6\main.cpp \
  C:/msys64/ucrt64/include/c++/14.2.0/tr1/riemann_zeta.tcc \
  C:/msys64/ucrt64/include/c++/14.2.0/complex \
  C:/msys64/ucrt64/include/c++/14.2.0/sstream \
- C:/msys64/ucrt64/include/c++/14.2.0/bits/sstream.tcc
+ C:/msys64/ucrt64/include/c++/14.2.0/bits/sstream.tcc \
+ C:\Users\user\Desktop\Laba\ 6\Tests/BitSeqTest.h \
+ C:\Users\user\Desktop\Laba\ 6\Tests/DynamicArrayTest.h \
+ C:\Users\user\Desktop\Laba\ 6\Tests/LinkedListTest.h \
+ C:\Users\user\Desktop\Laba\ 6\Tests/ListSeqTest.h

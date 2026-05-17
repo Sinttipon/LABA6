@@ -10,6 +10,7 @@
 #include "../Collections/BitSequence.h"
 #include "../Base/exceptions.hpp"
 #include "../Base/Option.hpp"
+extern int testsFailed;
 #define TEST(name)                                    \
     do                                                \
     {                                                 \
@@ -64,4 +65,3 @@
             throw TestFailedException("Ожидалось исключение " #exc_type ", но оно не выброшено"); \
         }                                                                                         \
     } while (0)
-void RunAllTests();

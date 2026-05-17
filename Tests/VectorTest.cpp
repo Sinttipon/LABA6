@@ -3,7 +3,6 @@
 #include "../Base/exceptions.hpp"
 #include <iostream>
 #include <cmath>
-int testsFailed = 0;
 
 void VectorGetTest()
 {
@@ -231,8 +230,56 @@ void VectorAllSubsequencesTest() {
     ENDTEST();
 }
 
+void VectorWhereTest(){
+    TEST("Where вектор")
+    {
+        auto range = Vector<int>::Range(1, 10);
+        Sequence<int> *whered = range.Where([](int x){ return x % 2 == 0; });
+        CHECK(whered->GetLength() == 5); 
+        CHECK(whered->Get(0) == 2);
+        CHECK(whered->Get(4) == 10);
+
+        delete whered;
+    }
+    ENDTEST();
+}
+
+void VectorBooleanTest(){
+    TEST("Boolean вектор")
+    {
+        int arr[] = {1, 2};
+        Vector<int> t(arr, 2);
+
+        auto *b = t.Boolean();
+
+        CHECK(b != nullptr);
+        CHECK(b->GetLength() == 4);
+
+        bool Empty = false;
+        bool Full = false;
+
+        for (size_t i = 0; i < b->GetLength(); ++i)
+        {
+            Vector<int> *s = dynamic_cast<Vector<int> *>(b->Get(i));
+            CHECK(s != nullptr);
+
+            if (s->GetLength() == 0)
+                Empty = true;
+            if (s->GetLength() == 2 && s->Get(0) == 1 && s->Get(1) == 2)
+                Full = true;
+            delete s;
+        }
+
+        CHECK(Empty);
+        CHECK(Full);
+        delete b; 
+    }
+    ENDTEST();
+}
+
 void RunAllVectorTests(){
     std::cout << "Тесты вектор" << std::endl;
+
     VectorGetTest();
     VectorGetSubsequence();
     VectorAppendPrepend();
@@ -246,6 +293,9 @@ void RunAllVectorTests(){
     VectorOperatorsTest2();
     VectorAllSubsequencesTest();
     VectorRangeTest();
+    VectorBooleanTest();
+    VectorWhereTest();
+
     if (testsFailed == 0){
         std::cout << "Все тесты успешно пройдены" << std::endl;
     } else{

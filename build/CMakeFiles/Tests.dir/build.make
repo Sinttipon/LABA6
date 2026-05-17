@@ -86,26 +86,11 @@ CMakeFiles/Tests.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Tests.dir/main.cpp.s"
 	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\user\Desktop\Laba 6\main.cpp" -o CMakeFiles\Tests.dir\main.cpp.s
 
-CMakeFiles/Tests.dir/Tests/tests.cpp.obj: CMakeFiles/Tests.dir/flags.make
-CMakeFiles/Tests.dir/Tests/tests.cpp.obj: CMakeFiles/Tests.dir/includes_CXX.rsp
-CMakeFiles/Tests.dir/Tests/tests.cpp.obj: C:/Users/user/Desktop/Laba\ 6/Tests/tests.cpp
-CMakeFiles/Tests.dir/Tests/tests.cpp.obj: CMakeFiles/Tests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\user\Desktop\Laba 6\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Tests.dir/Tests/tests.cpp.obj"
-	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Tests.dir/Tests/tests.cpp.obj -MF CMakeFiles\Tests.dir\Tests\tests.cpp.obj.d -o CMakeFiles\Tests.dir\Tests\tests.cpp.obj -c "C:\Users\user\Desktop\Laba 6\Tests\tests.cpp"
-
-CMakeFiles/Tests.dir/Tests/tests.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Tests.dir/Tests/tests.cpp.i"
-	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\user\Desktop\Laba 6\Tests\tests.cpp" > CMakeFiles\Tests.dir\Tests\tests.cpp.i
-
-CMakeFiles/Tests.dir/Tests/tests.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Tests.dir/Tests/tests.cpp.s"
-	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\user\Desktop\Laba 6\Tests\tests.cpp" -o CMakeFiles\Tests.dir\Tests\tests.cpp.s
-
 CMakeFiles/Tests.dir/Tests/VectorTest.cpp.obj: CMakeFiles/Tests.dir/flags.make
 CMakeFiles/Tests.dir/Tests/VectorTest.cpp.obj: CMakeFiles/Tests.dir/includes_CXX.rsp
 CMakeFiles/Tests.dir/Tests/VectorTest.cpp.obj: C:/Users/user/Desktop/Laba\ 6/Tests/VectorTest.cpp
 CMakeFiles/Tests.dir/Tests/VectorTest.cpp.obj: CMakeFiles/Tests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\user\Desktop\Laba 6\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Tests.dir/Tests/VectorTest.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\user\Desktop\Laba 6\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Tests.dir/Tests/VectorTest.cpp.obj"
 	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Tests.dir/Tests/VectorTest.cpp.obj -MF CMakeFiles\Tests.dir\Tests\VectorTest.cpp.obj.d -o CMakeFiles\Tests.dir\Tests\VectorTest.cpp.obj -c "C:\Users\user\Desktop\Laba 6\Tests\VectorTest.cpp"
 
 CMakeFiles/Tests.dir/Tests/VectorTest.cpp.i: cmake_force
@@ -120,7 +105,7 @@ CMakeFiles/Tests.dir/Tests/BitSeqTest.cpp.obj: CMakeFiles/Tests.dir/flags.make
 CMakeFiles/Tests.dir/Tests/BitSeqTest.cpp.obj: CMakeFiles/Tests.dir/includes_CXX.rsp
 CMakeFiles/Tests.dir/Tests/BitSeqTest.cpp.obj: C:/Users/user/Desktop/Laba\ 6/Tests/BitSeqTest.cpp
 CMakeFiles/Tests.dir/Tests/BitSeqTest.cpp.obj: CMakeFiles/Tests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\user\Desktop\Laba 6\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Tests.dir/Tests/BitSeqTest.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\user\Desktop\Laba 6\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Tests.dir/Tests/BitSeqTest.cpp.obj"
 	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Tests.dir/Tests/BitSeqTest.cpp.obj -MF CMakeFiles\Tests.dir\Tests\BitSeqTest.cpp.obj.d -o CMakeFiles\Tests.dir\Tests\BitSeqTest.cpp.obj -c "C:\Users\user\Desktop\Laba 6\Tests\BitSeqTest.cpp"
 
 CMakeFiles/Tests.dir/Tests/BitSeqTest.cpp.i: cmake_force
@@ -135,7 +120,7 @@ CMakeFiles/Tests.dir/Tests/DynamicArrayTest.cpp.obj: CMakeFiles/Tests.dir/flags.
 CMakeFiles/Tests.dir/Tests/DynamicArrayTest.cpp.obj: CMakeFiles/Tests.dir/includes_CXX.rsp
 CMakeFiles/Tests.dir/Tests/DynamicArrayTest.cpp.obj: C:/Users/user/Desktop/Laba\ 6/Tests/DynamicArrayTest.cpp
 CMakeFiles/Tests.dir/Tests/DynamicArrayTest.cpp.obj: CMakeFiles/Tests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\user\Desktop\Laba 6\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Tests.dir/Tests/DynamicArrayTest.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\user\Desktop\Laba 6\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Tests.dir/Tests/DynamicArrayTest.cpp.obj"
 	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Tests.dir/Tests/DynamicArrayTest.cpp.obj -MF CMakeFiles\Tests.dir\Tests\DynamicArrayTest.cpp.obj.d -o CMakeFiles\Tests.dir\Tests\DynamicArrayTest.cpp.obj -c "C:\Users\user\Desktop\Laba 6\Tests\DynamicArrayTest.cpp"
 
 CMakeFiles/Tests.dir/Tests/DynamicArrayTest.cpp.i: cmake_force
@@ -150,7 +135,7 @@ CMakeFiles/Tests.dir/Tests/LinkedListTest.cpp.obj: CMakeFiles/Tests.dir/flags.ma
 CMakeFiles/Tests.dir/Tests/LinkedListTest.cpp.obj: CMakeFiles/Tests.dir/includes_CXX.rsp
 CMakeFiles/Tests.dir/Tests/LinkedListTest.cpp.obj: C:/Users/user/Desktop/Laba\ 6/Tests/LinkedListTest.cpp
 CMakeFiles/Tests.dir/Tests/LinkedListTest.cpp.obj: CMakeFiles/Tests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\user\Desktop\Laba 6\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Tests.dir/Tests/LinkedListTest.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\user\Desktop\Laba 6\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Tests.dir/Tests/LinkedListTest.cpp.obj"
 	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Tests.dir/Tests/LinkedListTest.cpp.obj -MF CMakeFiles\Tests.dir\Tests\LinkedListTest.cpp.obj.d -o CMakeFiles\Tests.dir\Tests\LinkedListTest.cpp.obj -c "C:\Users\user\Desktop\Laba 6\Tests\LinkedListTest.cpp"
 
 CMakeFiles/Tests.dir/Tests/LinkedListTest.cpp.i: cmake_force
@@ -165,7 +150,7 @@ CMakeFiles/Tests.dir/Tests/ListSeqTest.cpp.obj: CMakeFiles/Tests.dir/flags.make
 CMakeFiles/Tests.dir/Tests/ListSeqTest.cpp.obj: CMakeFiles/Tests.dir/includes_CXX.rsp
 CMakeFiles/Tests.dir/Tests/ListSeqTest.cpp.obj: C:/Users/user/Desktop/Laba\ 6/Tests/ListSeqTest.cpp
 CMakeFiles/Tests.dir/Tests/ListSeqTest.cpp.obj: CMakeFiles/Tests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\user\Desktop\Laba 6\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Tests.dir/Tests/ListSeqTest.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\user\Desktop\Laba 6\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Tests.dir/Tests/ListSeqTest.cpp.obj"
 	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Tests.dir/Tests/ListSeqTest.cpp.obj -MF CMakeFiles\Tests.dir\Tests\ListSeqTest.cpp.obj.d -o CMakeFiles\Tests.dir\Tests\ListSeqTest.cpp.obj -c "C:\Users\user\Desktop\Laba 6\Tests\ListSeqTest.cpp"
 
 CMakeFiles/Tests.dir/Tests/ListSeqTest.cpp.i: cmake_force
@@ -179,7 +164,6 @@ CMakeFiles/Tests.dir/Tests/ListSeqTest.cpp.s: cmake_force
 # Object files for target Tests
 Tests_OBJECTS = \
 "CMakeFiles/Tests.dir/main.cpp.obj" \
-"CMakeFiles/Tests.dir/Tests/tests.cpp.obj" \
 "CMakeFiles/Tests.dir/Tests/VectorTest.cpp.obj" \
 "CMakeFiles/Tests.dir/Tests/BitSeqTest.cpp.obj" \
 "CMakeFiles/Tests.dir/Tests/DynamicArrayTest.cpp.obj" \
@@ -190,7 +174,6 @@ Tests_OBJECTS = \
 Tests_EXTERNAL_OBJECTS =
 
 Tests.exe: CMakeFiles/Tests.dir/main.cpp.obj
-Tests.exe: CMakeFiles/Tests.dir/Tests/tests.cpp.obj
 Tests.exe: CMakeFiles/Tests.dir/Tests/VectorTest.cpp.obj
 Tests.exe: CMakeFiles/Tests.dir/Tests/BitSeqTest.cpp.obj
 Tests.exe: CMakeFiles/Tests.dir/Tests/DynamicArrayTest.cpp.obj
@@ -200,7 +183,7 @@ Tests.exe: CMakeFiles/Tests.dir/build.make
 Tests.exe: CMakeFiles/Tests.dir/linkLibs.rsp
 Tests.exe: CMakeFiles/Tests.dir/objects1.rsp
 Tests.exe: CMakeFiles/Tests.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="C:\Users\user\Desktop\Laba 6\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable Tests.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="C:\Users\user\Desktop\Laba 6\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable Tests.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\Tests.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
